@@ -1,0 +1,68 @@
+/* Add these styles to your CSS/SCSS file */
+
+.category .card-link {
+    position: relative;
+    display: block;
+    overflow: hidden;
+  }
+  
+  .category .card {
+    position: relative;
+    overflow: hidden;
+    border: none; /* Remove border */
+    transition: transform 0.3s ease-out;
+  }
+  
+  .category .card-link:hover {
+    transform: scaleY(1.1);
+  }
+  
+  .category .card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(151,249,239);
+    background: linear-gradient(0deg, rgba(151,249,239,1) 0%, rgba(210,31,185,1) 0%, rgba(198,75,196,1) 0%, rgba(213,59,192,1) 0%, rgba(233,23,91,1) 0%, rgba(85,83,85,0.9051995798319328) 0%, rgba(237,214,237,1) 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease-out;
+  }
+  
+  .category .card:hover .card-overlay {
+    opacity: .8;
+  }
+  
+  .category .card-content {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: #fff; /* Adjust text color as needed */
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  
+  .category .card-content i {
+    /* padding: 10px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 auto;
+    background-color: #ebd10f;
+    border-radius: 50%;
+    font-size: 15px; /* Adjust icon size as needed */
+  }
+  
+
+  .category .card-content h3{
+    font-size: 20px;color: #fff;
+  }
+
+  .category .card-content h3:hover{
+    color: #ebd10f;
+  }
